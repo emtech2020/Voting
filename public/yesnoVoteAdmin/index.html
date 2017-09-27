@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <title>yesnoVoteAdmin</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="modules/utils/material.indigo-pink.min.css">
+</head>
+
+<body>
+  
+  <div id="container">
+  
+    <div id="voteRoomCreatorScreen">
+      
+      <div id="voteRoomEntryFormContainer">
+        <form id="voteRoomEntryForm">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input id="voteRoomInput" class="mdl-textfield__input" type="text" />
+            <label id="voteRoomInputLabel" class="mdl-textfield__label" for="voteRoomInput">Enter a voting room name...</label>
+          </div>
+        </form>
+        <button id="createVoteRoomButton" class="mdl-button mdl-js-button mdl-button mdl-js-ripple-effect">
+          CREATE ROOM
+        </button>
+      
+              
+          
+      </div>      
+
+    </div>
+    
+    
+    
+    
+    
+    <div id="voteRoomScreen">
+      
+      <!--
+      <span id="yesVotes" style="color: rgb(100, 255, 218);">0</span>
+      <br>
+      <span id="undecidedVotes" style="color: rgb(220, 220, 220);">0</span>
+      <br>
+      <span id="noVotes" style="color: rgb(255, 64, 129);">0</span>
+      -->
+    
+      <button id="backButton" class="mdl-button mdl-js-button mdl-button--icon">
+        <img id="backButtonImage" src="assets/backArrow.png"></img>
+      </button>
+      
+      <button id="refreshButton" class="mdl-button mdl-js-button mdl-button--icon">
+        <img id="refreshButtonImage" src="assets/refresh.png"></img>
+      </button>
+      
+      <button id="pauseButton" class="mdl-button mdl-js-button mdl-button--icon">
+        <img id="pauseButtonImage" src="assets/pause.png"></img>
+      </button>
+    
+      <div id="simulationControlsContainer">
+        
+        <div id="simulationControls">
+          
+          <div id="numSimulatedClientsSliderContainer">
+            <input id="numSimulatedClientsSlider" class="mdl-slider mdl-js-slider" type="range" min="0" max="500" value="0" tabindex="0"/>
+          </div>
+          <!--<span for="numSimulatedClientsSliderContainer" class="mdl-tooltip">Set the number of simulated clients</span>-->
+          
+          <div id="simulationToggleContainer">
+             <label id="simulationToggle" class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="simulationCheckbox">
+              <input type="checkbox" id="simulationCheckbox" class="mdl-switch__input" />
+              <span class="mdl-switch__label"></span>
+            </label>       
+          </div>
+          <!--<span for="simulationToggleContainer" class="mdl-tooltip">Toggle the simulation</span>-->
+          
+        </div>
+        
+      </div>
+    
+      <div id="voteRoomText"></div>
+  
+      <div id="votesContainer">
+        <div id="voteBallPit">
+          <div id="noBin"></div>
+          <div id="undecidedBin"></div>
+          <div id="yesBin"></div>
+          <div id="voteHistoryPlotContainer">
+            <div id="voteHistoryPlot"></div>
+          </div>
+          <div id="shade"></div>
+        </div>
+  
+      </div>
+
+    </div>
+  
+  
+  
+      
+  </div>
+  
+  <script src="modules/utils/material.min.js"></script>
+  <script src="modules/utils/CSSPlugin.min.js"></script>
+  <script src="modules/utils/EasePack.min.js"></script>
+  <script src="modules/utils/TweenLite.min.js"></script>
+  <script src="modules/utils/socket.io.js"></script>
+  <script src="modules/utils/eddystone-advertising.js"></script>
+  <script src="modules/utils/d3.v2.min.js"></script>
+  <script src="modules/core/voteRoomCreatorScreen.js"></script>
+  <script src="modules/core/voteHistoryPlot.js"></script>
+  <script src="modules/core/voteRoomScreen.js"></script>
+  <script src="modules/core/voteBallPit.js"></script>
+  <script src="modules/core/voteManager.js"></script>
+  <script src="modules/core/simulationManager.js"></script>
+  <script src="modules/core/socketManager.js"></script>
+  <script src="modules/core/beaconManager.js"></script>
+  <script src="modules/core/brain.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,224 @@
+#html {
+
+}
+
+#body {
+}
+
+#container {
+  position: absolute;
+  top: 0; 
+  right: 0;
+  bottom: 0; 
+  left: 0;
+}
+
+
+
+
+
+
+/*
+vote room creation screen
+*/
+
+#voteRoomCreatorScreen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#voteRoomEntryFormContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+#voteRoomEntryForm {
+}
+
+#voteRoomInput {
+  text-align: center;
+}
+
+#voteRoomInputLabel {
+  text-align: center;
+}
+
+#createVoteRoomButton {
+  width: 300px;
+  margin-top: -10px;
+}
+
+
+
+
+
+/*
+vote room screen
+*/
+
+#voteRoomScreen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#backButton {
+  position: absolute;
+  margin-top: 35px;
+  margin-left: 50px;
+  opacity: 0;
+}
+
+#backButtonImage {
+  margin-top: -3px;  
+}
+
+#refreshButton {
+  position: absolute;
+  margin-top: 35px;
+  margin-right: 50px;
+  right: 0px;
+}
+
+#refreshButtonImage {
+  margin-top: -3px;
+}
+
+#pauseButton {
+  position: absolute;
+  margin-top: 35px;
+  margin-right: 90px;
+  right: 0px;
+}
+
+#pauseButtonImage {
+  margin-top: -3px;
+}
+
+#shade {
+  position: absolute;
+  opacity: .99;
+  display: none;
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
+}
+
+
+
+
+
+#voteRoomText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Roboto";
+  font-size: 16px;
+  color: rgb(38, 38, 38);
+  opacity; 0;
+  text-align: center;
+}
+
+
+
+
+
+#simulationControlsContainer {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  opacity: 0;
+}
+
+#numSimulatedClientsSliderContainer {
+  width: 75%;
+  display: inline-block;
+}
+
+#simulationToggleContainer {
+  display: inline-block;
+}
+
+
+
+
+
+#votesContainer {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#voteBallPit {
+  width: 100%;
+  height: 100%;
+}
+
+#noBin {
+  position: absolute;
+  border-radius: 500px;
+  border-style: solid;
+  border-width: 5px;
+  z-index: 2;
+}
+
+#undecidedBin {
+  position: absolute;
+  z-index: 2;
+}
+
+#yesBin {
+  position: absolute;
+  border-radius: 500px;
+  border-style: solid;
+  border-width: 5px;
+  z-index: 2;
+}
+
+#voteHistoryPlotContainer {
+  position: absolute;
+  z-index: 1;
+}
+
+#voteHistoryPlot {
+  width: 100%;
+  height: 100%;
+}
+
+path {
+    stroke: #CCCCCC;
+    stroke-width: 5;
+    opacity: .6;
+    fill: none;
+    z-index: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

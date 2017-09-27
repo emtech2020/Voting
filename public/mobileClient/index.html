@@ -1,0 +1,51 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>yes no</title>
+    <meta name="description" content="vote yes or vote no but not both"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+
+
+
+  <body>
+
+
+    <div id="container">
+
+      <div id="voteControls">
+        <div id="voteYesButton">
+          <i id="thumbUpIcon" class="material-icons">thumb_up</i>
+        </div>
+        <div id="voteNoButton">
+          <i id="thumbDownIcon" class="material-icons">thumb_down</i>
+        </div>
+      </div>
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>    
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+
+    <script src="modules/core/voteManager.js"></script>
+    <script src="modules/core/socketManager.js"></script>
+    <script src="modules/core/brain.js"></script>
+    <script src="main.js"></script>
+
+
+
+    <script>
+      init();
+    </script>
+
+  </body>
+</html>
